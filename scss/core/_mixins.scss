@@ -1,0 +1,47 @@
+@mixin abs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin flexMid($fd: row,$jc: center,$ai: center) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin img {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+@mixin mobileS {
+    @media #{$res_424} {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media #{$res_425} {
+        @content;
+    }
+}
+@mixin tablet {
+    @media #{$res_768} {
+        @content;
+    }
+}
+@mixin PC {
+    @media #{$res_1024} {
+        @content;
+    }
+}
+@mixin PCL {
+    @media #{$res_1280} {
+        @content;
+    }
+}

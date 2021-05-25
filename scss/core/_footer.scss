@@ -1,0 +1,53 @@
+footer {
+    background-color: #000;
+    height: 56px;
+    #footer {
+        @include flexMid($jc: space-between);
+        padding: 15px 0;
+        margin-bottom: 0;
+        .copyright {
+            color: $grey-cl;
+            font-size: 12px;
+        }
+        a {
+            font-size: 12px;
+            color: $grey-cl;
+            font-weight: lighter;
+        }
+    }
+}
+
+@include mobileS {
+    footer {
+        height: auto;
+        #footer {
+            flex-direction: column;
+            margin-bottom: -40px;
+            .copyright {
+                display: none;
+            }
+            img {
+                width: 30%;
+            }
+            a {
+                display: none;
+            }
+        }
+    }
+}
+@include mobile {
+    footer {
+        height: auto;
+        #footer {
+            flex-direction: column;
+            margin-bottom: -40px;
+            .copyright {
+                display: none;
+            }
+            
+            a {
+                display: none;
+            }
+        }
+    }
+}
