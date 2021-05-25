@@ -1,1 +1,0 @@
-fb: https://www.facebook.com/HmD.102/
